@@ -1,14 +1,14 @@
 package com.yarosh.rejaze.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 
 @Data
 @Entity
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "cats")
 public class Cat {
     @Id
@@ -28,6 +28,4 @@ public class Cat {
         this.weight = weight;
     }
 
-    public Cat() {
-    }
 }
