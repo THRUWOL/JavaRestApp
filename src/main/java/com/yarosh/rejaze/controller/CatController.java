@@ -1,7 +1,5 @@
 package com.yarosh.rejaze.controller;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yarosh.rejaze.DTO.CatDTO;
 import com.yarosh.rejaze.entity.Cat;
 import com.yarosh.rejaze.repository.CatRepository;
@@ -18,15 +16,15 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-public class MainController {
+public class CatController {
 
     private final CatRepository catRepository;
 
-    private final String ADD_NEW_CAT = "/api/add";
-    private final String GET_ALL_CATS = "/api/all";
-    private final String GET_CAT_BY_ID = "/api/cat";
-    private final String DELETE_CAT_BY_ID = "/api/cat";
-    private final String UPDATE_CAT = "/api/add";
+    private static final String ADD_NEW_CAT = "/api/add";
+    private static final String GET_ALL_CATS = "/api/all";
+    private static final String GET_CAT_BY_ID = "/api/cat";
+    private static final String DELETE_CAT_BY_ID = "/api/cat";
+    private static final String UPDATE_CAT = "/api/add";
 
     @Operation(summary = "Add new cat")
     @PostMapping(ADD_NEW_CAT)

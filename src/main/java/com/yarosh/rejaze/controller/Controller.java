@@ -4,7 +4,6 @@ import com.yarosh.rejaze.kafka.KafkaProducer;
 import com.yarosh.rejaze.repository.CatRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
